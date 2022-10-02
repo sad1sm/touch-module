@@ -1,0 +1,5 @@
+---
+- name: Testing touch module.
+  hosts: localhost
+  roles:
+    - role-touch-file

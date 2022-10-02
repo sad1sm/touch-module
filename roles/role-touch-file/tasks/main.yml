@@ -1,0 +1,10 @@
+---
+
+- name: Create file.
+  netology.touch_module.touch_module:
+    path: "{{ path }}"
+    content: "{{ content }}"
+  register: job_result
+
+- debug:
+    msg: "{{ job_result.message }}"
